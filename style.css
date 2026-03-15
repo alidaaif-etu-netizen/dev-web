@@ -1,98 +1,85 @@
 *{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family: Arial, sans-serif;
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, sans-serif;
 }
 
 body{
-    background-color:#f4f4f4;
-    color:#333;
+background:#f2f2f2;
+display:flex;
+justify-content:center;
+align-items:center;
+min-height:100vh;
 }
 
-/* Header */
-
-header{
-    background:#222;
-    color:white;
-    text-align:center;
-    padding:20px;
+.container{
+background:white;
+padding:30px;
+width:450px;
+border-radius:10px;
+box-shadow:0 5px 15px rgba(0,0,0,0.2);
 }
 
-nav ul{
-    list-style:none;
-    margin-top:10px;
+h1{
+text-align:center;
+margin-bottom:20px;
+color:#333;
 }
 
-nav ul li{
-    display:inline-block;
-    margin:10px;
+fieldset{
+border:1px solid #ddd;
+padding:15px;
+margin-bottom:20px;
+border-radius:8px;
 }
 
-nav ul li a{
-    color:white;
-    text-decoration:none;
-    font-weight:bold;
+legend{
+padding:5px 10px;
+font-weight:bold;
+color:#0077cc;
 }
 
-nav ul li a:hover{
-    color:#00adb5;
+label{
+display:block;
+margin-top:10px;
+margin-bottom:5px;
 }
 
-/* Sections */
-
-section{
-    background:white;
-    margin:30px;
-    padding:25px;
-    border-radius:10px;
-    box-shadow:0 0 10px rgba(0,0,0,0.1);
+input, textarea{
+width:100%;
+padding:8px;
+border:1px solid #ccc;
+border-radius:5px;
 }
 
-h2{
-    margin-bottom:15px;
-    color:#00adb5;
+textarea{
+height:80px;
+resize:none;
 }
 
-/* Image */
-
-#apropos img{
-    width:150px;
-    border-radius:50%;
-    margin-bottom:15px;
+input[type="radio"],
+input[type="checkbox"]{
+width:auto;
+margin-right:5px;
 }
 
-/* Liste */
-
-ul li{
-    margin:8px 0;
+button{
+width:100%;
+padding:12px;
+border:none;
+background:#0077cc;
+color:white;
+font-size:16px;
+border-radius:5px;
+cursor:pointer;
+margin-top:15px;
 }
 
-/* Tableau */
-
-table{
-    width:100%;
-    border-collapse:collapse;
-    margin-top:10px;
+button:hover{
+background:#005fa3;
 }
 
-table th, table td{
-    border:1px solid #ddd;
-    padding:10px;
-    text-align:center;
-}
-
-table th{
-    background:#00adb5;
-    color:white;
-}
-
-/* Footer */
-
-footer{
-    background:#222;
-    color:white;
-    text-align:center;
-    padding:15px;
-    margin-top:30px;
+.cgu{
+margin-top:15px;
 }

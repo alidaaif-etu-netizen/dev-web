@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Formulaire d'inscription</title>
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>Formulaire d'inscription</h1>
+
+<form>
+
+<fieldset>
+<legend>Informations personnelles</legend>
+
+<label>Nom</label>
+<input type="text" name="nom" required autocomplete="family-name">
+
+<label>Prénom</label>
+<input type="text" name="prenom" required autocomplete="given-name">
+
+<label>Email</label>
+<input type="email" name="email" required autocomplete="email">
+
+<label>Téléphone</label>
+<input type="tel"
+pattern="[0-9]{10}"
+placeholder="0612345678"
+required>
+
+<label>Date de naissance</label>
+<input type="date"
+name="naissance"
+max="2007-01-01"
+required>
+
+</fieldset>
+
+
+<fieldset>
+<legend>Sécurité</legend>
+
+<label>Mot de passe</label>
+<input type="password"
+pattern="(?=.*[A-Z])(?=.*[0-9]).{8,}"
+title="Minimum 8 caractères, 1 majuscule et 1 chiffre"
+required>
+
+<label>Confirmer le mot de passe</label>
+<input type="password" required>
+
+</fieldset>
+
+
+<fieldset>
+<legend>Informations supplémentaires</legend>
+
+<label>Pays</label>
+
+<input list="pays" name="pays" required>
+
+<datalist id="pays">
+<option value="Maroc">
+<option value="France">
+<option value="Espagne">
+<option value="Canada">
+<option value="Belgique">
+</datalist>
+
+
+<p>Genre</p>
+
+<label>
+<input type="radio" name="genre" required>
+Homme
+</label>
+
+<label>
+<input type="radio" name="genre">
+Femme
+</label>
+
+
+<p>Centres d'intérêt</p>
+
+<label><input type="checkbox"> Programmation</label>
+<label><input type="checkbox"> IA</label>
+<label><input type="checkbox"> Jeux vidéo</label>
+<label><input type="checkbox"> Sport</label>
+
+
+<label>Biographie</label>
+
+<textarea maxlength="200" placeholder="Parlez un peu de vous..."></textarea>
+
+
+<label>Photo de profil</label>
+<input type="file" accept="image/*">
+
+</fieldset>
+
+
+<label class="cgu">
+<input type="checkbox" required>
+J'accepte les conditions générales d'utilisation
+</label>
+
+
+<button type="submit">S'inscrire</button>
+
+</form>
+
+</div>
+
+</body>
+</html>
